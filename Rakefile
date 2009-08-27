@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/mikedamage/ribbit"
     gem.authors = ["Mike Green"]
     gem.add_development_dependency "thoughtbot-shoulda"
+		gem.add_dependency("jnunemaker-httparty", ">= 0.4.4")
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

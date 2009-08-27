@@ -1,10 +1,10 @@
-h1. RibBit
+h1. Ribbit
 
 _noun: a frog that likes to HTTParty with the Bit.ly URL shortening service_
 
 h2. Existential Rationale
 
-I created RibBit because I needed a Bit.ly client that can do more than just shorten URL's. RibBit takes advantage of "Bitly's":http://bit.ly statistics features so I can track the links I create.
+I created Ribbit because I needed a Bit.ly client that can do more than just shorten URL's. RibBit takes advantage of "Bitly's":http://bit.ly statistics features so I can track the links I create.
 
 h2. Note on Patches/Pull Requests
 
