@@ -16,7 +16,13 @@ class Ribbit
 	end
 	
 	def shorten(long_url)
-		self.class.get("/shorten", :query => {:longUrl => long_url})
+		response = self.class.get("/shorten", :query => {:longUrl => long_url})
+		
+		if response.code == 200
+			return response
+		else
+			raise RibbitError, "Error shortening URL #{long_url}", "shorten"
+		end
 	end
 	
 	def expand(short_url)

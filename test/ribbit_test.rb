@@ -1,7 +1,15 @@
 require 'test_helper'
 
 class RibbitTest < Test::Unit::TestCase
-  #should "return a new instance of class Ribbit" do
-	#	
-	#end
+  
+	context "an instance of Ribbit" do
+		
+		setup do
+			@auth = YAML.load_file(File.join(File.dirname(__FILE__), "auth.yml"))
+			@ribbit = Ribbit.new(@auth["user"], @auth["api_key"])
+		end
+		
+		
+	end
+
 end
